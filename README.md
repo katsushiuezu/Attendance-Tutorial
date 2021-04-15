@@ -8,3 +8,4 @@
 * Ruby
 * Rails
 * Git
+* 日付設定
