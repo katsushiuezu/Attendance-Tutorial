@@ -3,22 +3,26 @@
     <%= link_to "Attendance App", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-         <li><%= link_to "Top", root_path %></li>
-         <li><%= link_to "Log in", login_path %></li>
+        <li><%= link_to "Top", root_path %></li>
+        <% if logged_in? %>
+          <li><%= link_to "Users", '#' %></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Account <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "Show", current_user %></li>
+              <li><%= link_to "Settings", '#' %></li>
+              <li class="divider"></li>
+              <li>
+                <%= link_to "Log out", logout_path, method: :delete %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+          <li><%= link_to "Log in", login_path %></li>
+        <% end %>
       </ul>
     </nav>
   </div>
 </header>
-
-<!--<form action="/login" accept-charset="UTF-8" method="post">-->
-<!--  <input name="utf8" type="hidden" value="✓" />-->
-<!--  <input type="hidden" name="authenticity_token" value="IlNQwkThYVuNcNEyZCCcAL58mydamLrBqNPraoP0eJgSU/HION/FtnJjAgEwud3t2yr4l/For70zzH3cuGtC4A==" />-->
-
-<!--  <label class="label-login" for="session_email">Email</label>-->
-<!--  <input class="form-control" type="email" name="session[email]" />-->
-
-<!--  <label class="label-login" for="session_password">Password</label>-->
-<!--  <input class="form-control" type="password" name="session[password]" />-->
-
-<!--  <input type="submit" name="commit" value="ログイン" class="btn btn-primary btn-block btn-login" data-disable-with="ログイン" />-->
-<!--</form>-->
