@@ -1,60 +1,10 @@
+# 勤怠システムを開発しよう！
 
-/* ユーザー情報テーブル */
-.user-table {
-  vertical-align: middle;
-  text-align: center;
-}
+これはセレブエンジニアサロンの教材で作られたサンプルアプリケーションです。
 
-/* ユーザー情報下ボタン */
+## 開発環境
 
-.btn-users-show {
-  margin-top: -10px;
-  margin-bottom: 10px;
-}
-
-/* ユーザー勤怠情報テーブル */
-
-#table-attendances {
-  th {
-    vertical-align: middle;
-    text-align: center;
-  }
-  td {
-    vertical-align: middle;
-    text-align: center;
-  }
-}
-
-.label-signup {
-  margin-top: 5px;
-}
-
-.btn-signup {
-  margin-top: 10px;
-}
-
-.label-user--edit {
-  margin-top: 5px;
-}
-
-.btn-user--edit {
-  margin-top: 10px;
-}
-
-/* ユーザー一覧ページ*/
-#table-users {
-td {
-  vertical-align: middle;
-  }
-}
-/* 基本情報編集モーダルウインドウ */
-
-.label-basic-info {
-  margin-top: 5px;
-}
-
-.btn-basic-info {
-  margin: 15px 0;
-  width: 30%;
-}
-
+* AWS Cloud9<br>
+* Ruby<br>
+* Rails<br>
+* Git(HTTPSからSSH通信へ変更)
