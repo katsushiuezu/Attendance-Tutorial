@@ -76,42 +76,12 @@ A
 
 5/8
 P 11章3を終わらす
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= full_title(yield(:title)) %></title>
-    <%= csrf_meta_tags %>
+D 11章3.2
+C× 勉強会終わってから、カリキュラムを進めたが、完了せず
+A勉強会の前に当日目標をクリアするまたは近いともろまで進めておく
 
-    <%= stylesheet_link_tag    'application', media: 'all', 
-                                'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application',
-                                'data-turbolinks-track': 'reload' %>
-  <!--if lt IE 9]>
-  
-  5/5
-P 10章を終わらす
+5/9
+P 11章を終わらす
 D
 C
 A
-  
-    <script src="//chnjs.cloudflare.com/afax/libs/html5shiv/r29/html5.min.js">
-    </script>
-   <![endif]-->
- </head>
- <body>
-   <header class="navbar navbar-fixed-top navbar-inverse">
-     <div class="container">
-       <%= link_to "Attendance App", '#', id: "logo" %>
-       <nav>
-         <ul class="nav navbar-nav navbar-right">
-           <li><%= link_to "TOP", '#' %></li>
-           <li><%= link_to "Log in", '#' %></li>
-         </ul>
-        </nav>
-       </div>
-      </header>
-      <div class="container">
-        <%= yield %>
-       </div>
-  </body>
-</html>
